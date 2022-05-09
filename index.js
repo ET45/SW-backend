@@ -15,8 +15,10 @@ app.use(cors());
 const port = 5000;
 
 //Endpoints
-app.get("/", async (req, res) => {
-  const url = "https://swapi.dev/api/films/3/";
+app.get("/film/:id", async (req, res) => {
+  const id = req.params.id;
+  const url = `https://swapi.dev/api/films/${id}`;
+
   const response = await axios.get(url);
   const characters = response.data.characters;
   const pagination = characters.slice(0, 30);
