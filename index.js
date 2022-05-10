@@ -9,6 +9,8 @@ const axios = require("axios");
 //Express assigned to a constant
 const app = express();
 
+const url = "https://swapi.dev/api";
+
 app.use(cors());
 
 //Port
@@ -18,9 +20,9 @@ const port = 5000;
 app.get("/film/:id", async (req, res) => {
   const id = req.params.id;
   //1 to 6 movies seperated
-  const url = `https://swapi.dev/api/films/${id}`;
+  const url2 = `${url}/films/${id}`;
 
-  const response = await axios.get(url);
+  const response = await axios.get(url2);
   const characters = response.data.characters;
   const pagination = characters.slice(0, 30);
 
