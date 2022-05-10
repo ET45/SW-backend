@@ -1,0 +1,11 @@
+-Create a new document.
+-Inside of the document, open a terminal.
+-Inside of the termindal copy and paste "git clone git@github.com:ET45/SW-backend.git"
+-Get inside of the SW-backend document, open a terminal, inside of the terminal type "npm i".
+-after the installations, type "npx nodemon index.js" in the same terminal.
+
+-Create a new document.
+-Inside of the document, open a terminal.
+-Inside of the termindal copy and paste "git clone git@github.com:ET45/SW-frontend.git"
+-Get inside of the SW-frontend document, open a terminal, inside of the terminal type "npm i".
+-after the installations, type "npm run start" in the same terminal.

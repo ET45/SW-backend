@@ -17,6 +17,7 @@ const port = 5000;
 //Endpoints
 app.get("/film/:id", async (req, res) => {
   const id = req.params.id;
+  //1 to 6 movies seperated
   const url = `https://swapi.dev/api/films/${id}`;
 
   const response = await axios.get(url);
